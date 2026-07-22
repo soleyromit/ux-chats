@@ -104,9 +104,6 @@ yellow ★ (`::after { content:"★" }`). 22s linear loop.
 get `.in` added by an IntersectionObserver (threshold 0.15) to animate up. **Always** wrap new
 sections' content in `.reveal`. Respect `prefers-reduced-motion` (a media query disables it).
 
-**Floating Join button** — fixed bottom-right, hidden until `scrollY > 520` (class `.show`
-toggled on scroll), so it doesn't duplicate the hero CTA.
-
 ---
 
 ## Page structure (order matters)
@@ -114,13 +111,14 @@ toggled on scroll), so it doesn't duplicate the hero CTA.
 2. **Hero** — two columns: headline ("Be raw. Be real. Belong.") + CTA on the left; a tilted
    "UX Chat · Live" call window (face tiles + "your seat →") with stickers on its corners on the right.
 3. **Marquee** — scrolling phrases.
-4. **What we do** (`#about`) — copy + chips (who it's for) on the left, tilted polaroid collage on the right.
-5. **Meet your hosts** (`#host`) — two alternating founder rows (photo + bio + yellow quote
+4. **Events** (`#events`) — leads the content (events are the prime focus): featured "Next up"
+   event card (purple date block + details + two Luma buttons), then the "Two kinds of night"
+   format cards + games row.
+5. **What we do** (`#about`) — copy + chips (who it's for) on the left, tilted polaroid collage on the right.
+6. **Meet your hosts** (`#host`) — two alternating founder rows (photo + bio + yellow quote
    callout + fact chips), shared philosophy line centered below.
-6. **Events** (`#events`) — featured "Next up" event card (purple date block + details + two
-   Luma buttons), then the "Two kinds of night" format cards + games row.
 7. **Real people. Real fun.** (`.crew`) — the real community call screenshot framed as a taped polaroid.
-8. **Join CTA band** (`#join`) — solid ink background, big headline, yellow CTA.
+8. **Join CTA band** (`#join`) — solid ink background, big headline, Discord community invite (secondary).
 9. **Footer** — ink background, logo + tagline + handle.
 
 ---
@@ -135,9 +133,13 @@ toggled on scroll), so it doesn't duplicate the hero CTA.
 ---
 
 ## The one CTA that matters
-Joining the **Discord** is the primary action everywhere:
-`https://discord.gg/bBbDbZbQ9` — keep it in the nav, hero, floating button, and closing band.
-Events link to Luma: event `https://luma.com/zjbt9cxo`, calendar `https://luma.com/TheUXChats`.
+**Events** are the primary action. The main CTA is "Events" / "See the events" pointing to the
+Luma events list `https://luma.com/TheUXChats` — keep it as the hero's primary (yellow) button
+and the nav's button (purple), and lead with the Events section high on the page.
+The specific next event registers at `https://luma.com/zjbt9cxo`.
+Joining the **Discord** (`https://discord.gg/bBbDbZbQ9`) is now the *secondary* action —
+demoted to a plain link / outline button in the nav and hero, and kept as the closing
+community-invite band.
 
 ---
 

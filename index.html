@@ -79,11 +79,9 @@
   .sticker { position: absolute; border: var(--line); border-radius: 14px; font-family: "Bricolage Grotesque"; font-weight: 800; display: grid; place-items: center; box-shadow: var(--shadow); z-index: 2; will-change: transform; }
   .st-1 { top: -46px; right: -16px; width: 100px; height: 100px; background: var(--pink); border-radius: 50%; font-size: 13px; text-align: center; line-height: 1.05; color:#fff; --rot: 9deg; animation: float1 6s ease-in-out infinite; }
   .st-2 { bottom: -26px; left: -30px; width: 90px; height: 90px; background: var(--sky); font-size: 13px; text-align:center; line-height:1.1; --rot: -10deg; animation: float2 7s ease-in-out infinite; }
-  .st-3 { bottom: -34px; right: 44px; width: 144px; height: 56px; background: var(--yellow); font-size: 16px; border-radius: 999px; --rot: -4deg; animation: float1 5.5s ease-in-out infinite; }
   @keyframes float1 { 0%,100%{ transform: rotate(var(--rot)) translateY(0); } 50%{ transform: rotate(var(--rot)) translateY(-12px); } }
   @keyframes float2 { 0%,100%{ transform: rotate(var(--rot)) translateY(0); } 50%{ transform: rotate(var(--rot)) translateY(10px); } }
   @media (prefers-reduced-motion: reduce){ .sticker { animation: none !important; transform: rotate(var(--rot)); } }
-  @media (max-width: 560px){ .st-3 { display: none; } }
 
   /* hero two-col + call window */
   .hero .wrap.hero-grid { display: grid; grid-template-columns: 1fr; gap: 54px; align-items: center; }
@@ -230,10 +228,6 @@
   footer .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: center; padding: 30px 0; font-weight: 600; font-size: 14px; opacity: .8; }
   footer .foot-brand { display: inline-flex; align-items: center; gap: 12px; }
   footer .foot-brand img { width: 34px; height: 34px; border-radius: 9px; border: 2px solid var(--cream); display: block; }
-
-  .float-join { position: fixed; right: 20px; bottom: 20px; z-index: 60; opacity: 0; transform: translateY(18px); pointer-events: none; transition: opacity .3s ease, transform .3s ease; }
-  .float-join.show { opacity: 1; transform: none; pointer-events: auto; }
-  .float-join .btn { box-shadow: var(--shadow-lg); }
 </style>
 </head>
 <body>
@@ -242,8 +236,8 @@
     <a class="logo" href="#top"><span class="mark"><img src="img/logo.png" alt="UX Chats logo"></span> UX Chats</a>
     <nav class="nav-links">
       <a class="lk" href="#about">What we do</a>
-      <a class="lk" href="#events">Events</a>
-      <a class="btn" href="https://discord.gg/bBbDbZbQ9" target="_blank" rel="noopener">Join Discord</a>
+      <a class="lk" href="https://discord.gg/bBbDbZbQ9" target="_blank" rel="noopener">Discord</a>
+      <a class="btn" href="https://luma.com/TheUXChats" target="_blank" rel="noopener">Events →</a>
     </nav>
   </div>
 </header>
@@ -256,8 +250,8 @@
         <h1 class="display hero-title">Be <span class="pop">raw.</span><br>Be real.<br><span class="hl">Belong.</span></h1>
         <p class="hero-sub">No formal attire. No stiff intros. Just designers having honest conversations, playing dumb-fun games, and growing together.</p>
         <div class="hero-cta">
-          <a class="btn yellow big" href="https://discord.gg/bBbDbZbQ9" target="_blank" rel="noopener">Join the Discord →</a>
-          <span class="sched"><span class="blip"></span> Every other Wednesday · 5:00 PM PST</span>
+          <a class="btn big" href="https://luma.com/TheUXChats" target="_blank" rel="noopener">See the events →</a>
+          <a class="btn yellow" href="https://discord.gg/bBbDbZbQ9" target="_blank" rel="noopener">Join Discord</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -276,7 +270,6 @@
         </div>
         <div class="sticker st-1">no ties<br>allowed</div>
         <div class="sticker st-2">say hi<br>👋</div>
-        <div class="sticker st-3">free to join</div>
       </div>
     </div>
   </section>
@@ -288,6 +281,66 @@
     <span>real talk</span><span>game night</span><span>no gatekeeping</span><span>craft night</span><span>vent &amp; celebrate</span><span>mentors</span>
   </div>
 </div>
+
+<section id="events" style="background: var(--cream); border-bottom: var(--line);">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Upcoming</span>
+      <h2 class="display sec">Next up.</h2>
+    </div>
+
+    <div class="next-up-wrap reveal">
+      <span class="next-up-sticker">Next up →</span>
+      <div class="next-up-card">
+        <div class="next-up-date">
+          <span class="month">Jul</span>
+          <span class="day">30</span>
+          <span class="time">6:00 PM PST</span>
+        </div>
+        <div class="next-up-body">
+          <span class="next-up-tag">Special Guest Night · Online</span>
+          <h3>Hot Seat: Recruiter Edition with Carl Wheatley</h3>
+          <p class="desc">With product design recruiter <strong>Carl Wheatley</strong> — the hiring process from the recruiter's side: what they actually look for, what hiring managers care about, how to talk salary, the application mistakes to skip, and portfolio strategy. Volunteer for the hot seat and get live feedback on your interview answers, then open Q&amp;A.</p>
+          <div class="next-up-meta">
+            <span>🕐 6:00 PM PST</span>
+            <span>🎥 On Zoom</span>
+            <span>⏱ 1.5 hours</span>
+            <span>🎟 $25 ticket</span>
+          </div>
+          <div class="next-up-actions">
+            <a class="btn yellow" href="https://luma.com/2iij0eab" target="_blank" rel="noopener">Register — $25 →</a>
+            <a class="btn line" href="https://luma.com/TheUXChats" target="_blank" rel="noopener">See all events</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top: 20px;">
+      <span class="kicker">The Events</span>
+      <h2 class="display sec">Two kinds of night.</h2>
+    </div>
+    <div class="cards reveal">
+      <div class="card p">
+        <div class="icon">✦</div>
+        <h3>Special Guest Nights</h3>
+        <p>UX mentors, psychologists, and creative minds share what you won't find on ChatGPT. Real insight, real talk, zero fluff. <strong>Ticketed events</strong> — a small fee helps us bring in great guests.</p>
+        <div class="tags"><span class="tag">Paid</span><span class="tag">Mentors</span><span class="tag">Q&amp;A</span><span class="tag">Real stories</span></div>
+      </div>
+      <div class="card">
+        <div class="icon">🎮</div>
+        <h3>Community Nights</h3>
+        <p>Game Night, Convo Night, Craft Night and more. Interactive UX games and challenges that spark creativity — and a lot of laughter. <strong>Always free</strong> — just show up.</p>
+        <div class="tags"><span class="tag">Free</span><span class="tag">Games</span><span class="tag">Convos</span><span class="tag">Craft</span></div>
+      </div>
+    </div>
+
+    <div class="games reveal">
+      <div class="game"><div class="em">🤔</div><h4>UX "Guess Who?"</h4><p>Guess the UX person, tool, or feature through clues. (Yes, we did liquid glass already.)</p></div>
+      <div class="game"><div class="em">🎨</div><h4>UX Pictionary</h4><p>2 teams. 1 canvas. Draw and pray your teammates can guess.</p></div>
+      <div class="game"><div class="em">⚡</div><h4>UX Stories</h4><p>Build a connect-the-story while solving a UX problem. This gets HILARIOUS.</p></div>
+    </div>
+  </div>
+</section>
 
 <section id="about">
   <div class="wrap about-grid">
@@ -367,66 +420,6 @@
   </div>
 </section>
 
-<section id="events" style="background: var(--cream); border-bottom: var(--line);">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="kicker">Upcoming</span>
-      <h2 class="display sec">Next up.</h2>
-    </div>
-
-    <div class="next-up-wrap reveal">
-      <span class="next-up-sticker">Next up →</span>
-      <div class="next-up-card">
-        <div class="next-up-date">
-          <span class="month">Jun</span>
-          <span class="day">03</span>
-          <span class="time">5:00 PM PST</span>
-        </div>
-        <div class="next-up-body">
-          <span class="next-up-tag">Special Guest Night · Online</span>
-          <h3>How to Use Claude Code to Design Multiple Products</h3>
-          <p class="desc">With co-founder <strong>Romit</strong> — a hands-on look at how designers use Claude Code, Granola &amp; Vercel to think, design, build, and ship multiple products without feeling overwhelmed. ~40-min talk, then open Q&amp;A and casual discussion.</p>
-          <div class="next-up-meta">
-            <span>🕐 5:00 PM PST</span>
-            <span>💬 In our Discord</span>
-            <span>⏱ 1.5 hours</span>
-            <span>👥 29 going</span>
-          </div>
-          <div class="next-up-actions">
-            <a class="btn yellow" href="https://luma.com/zjbt9cxo" target="_blank" rel="noopener">Register on Luma →</a>
-            <a class="btn line" href="https://luma.com/TheUXChats" target="_blank" rel="noopener">See all events</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="reveal" style="margin-top: 20px;">
-      <span class="kicker">The Events</span>
-      <h2 class="display sec">Two kinds of night.</h2>
-    </div>
-    <div class="cards reveal">
-      <div class="card p">
-        <div class="icon">✦</div>
-        <h3>Special Guest Nights</h3>
-        <p>UX mentors, psychologists, and creative minds share what you won't find on ChatGPT. Real insight, real talk, zero fluff.</p>
-        <div class="tags"><span class="tag">Mentors</span><span class="tag">Q&amp;A</span><span class="tag">Real stories</span></div>
-      </div>
-      <div class="card">
-        <div class="icon">🎮</div>
-        <h3>Community Nights</h3>
-        <p>Game Night, Convo Night, Craft Night and more. Interactive UX games and challenges that spark creativity — and a lot of laughter.</p>
-        <div class="tags"><span class="tag">Games</span><span class="tag">Convos</span><span class="tag">Craft</span></div>
-      </div>
-    </div>
-
-    <div class="games reveal">
-      <div class="game"><div class="em">🤔</div><h4>UX "Guess Who?"</h4><p>Guess the UX person, tool, or feature through clues. (Yes, we did liquid glass already.)</p></div>
-      <div class="game"><div class="em">🎨</div><h4>UX Pictionary</h4><p>2 teams. 1 canvas. Draw and pray your teammates can guess.</p></div>
-      <div class="game"><div class="em">⚡</div><h4>UX Stories</h4><p>Build a connect-the-story while solving a UX problem. This gets HILARIOUS.</p></div>
-    </div>
-  </div>
-</section>
-
 <section class="crew">
   <div class="wrap">
     <div class="head reveal">
@@ -459,18 +452,11 @@
   </div>
 </footer>
 
-<div class="float-join"><a class="btn yellow" href="https://discord.gg/bBbDbZbQ9" target="_blank" rel="noopener">Join Discord</a></div>
-
 <script>
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
-
-  const floatJoin = document.querySelector('.float-join');
-  const onScroll = () => floatJoin.classList.toggle('show', window.scrollY > 520);
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
 </script>
 
 
